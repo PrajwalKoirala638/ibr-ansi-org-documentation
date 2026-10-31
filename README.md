@@ -371,7 +371,7 @@ The following instructions describe a recommended development setup. They do not
 
 ```bash
 sudo apt update
-sudo apt install python3 python3-pip python3-venv git
+sudo apt install python3 python3-pip python3-venv git -y
 ```
 
 **Windows:**
@@ -393,8 +393,8 @@ brew install python git
 Verify the installation:
 
 ```bash
-python3 --version
-python3 -m pip --version
+python --version
+pip --version
 git --version
 ```
 
@@ -429,13 +429,13 @@ Activate it on Windows PowerShell:
 Upgrade pip:
 
 ```bash
-python -m pip install --upgrade pip
+pip install --upgrade pip
 ```
 
 Install a package required by your own application:
 
 ```bash
-python -m pip install package-name
+pip install package-name
 ```
 
 Replace `package-name` with the actual dependency your project needs.
